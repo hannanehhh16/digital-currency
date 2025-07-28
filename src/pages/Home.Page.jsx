@@ -1,7 +1,11 @@
 import React from 'react'
+import Spinner from '../components/spinner/Spinner'
+
 
 export default function HomePage() {
     return (
-        <div>HomePage</div>
+        <div>HomePage
+            <Spinner />
+        </div>
     )
 }

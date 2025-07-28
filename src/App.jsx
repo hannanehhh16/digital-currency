@@ -10,6 +10,7 @@ import Coinpage from "./pages/Coin.page";
 
 
 
+
 function App() {
   return (
     <div>
