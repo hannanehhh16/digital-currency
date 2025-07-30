@@ -29,7 +29,7 @@ export default function ContactUsPage() {
                         <button className='btn btn-outline-primary ms-3 mt-4'>Send</button>
                     </div>
                 </div>
-                <div className="col-md-5 alight-item-center justify-content-center">
+                <div className="col-md-5 text-center">
                     <img className="about-img" src={contactImg} alt="about" />
                 </div>
             </div>
