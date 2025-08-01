@@ -1,5 +1,6 @@
-import React, { useRef } from 'react'
+import React, { useRef } from 'react';
 import "./Navbar.css";
+import { FaCoins } from "react-icons/fa";
 
 import { Link } from "react-router-dom";
 
@@ -16,9 +17,12 @@ const NavbarComponent = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-light">
       <div className="container-fluid">
-        <div>
-          <span className="navbar-logo-text">Crypto Tracking</span>
-        </div>
+        <Link to="/" className="navbar-brand d-flex align-items-center" style={{gap: '0.5rem', lineHeight: 1}}>
+          <span style={{display: 'flex', alignItems: 'center', height: '100%'}}>
+            <FaCoins className="navbar-logo-icon" style={{fontSize: '2rem', verticalAlign: 'middle'}} />
+          </span>
+          <span className="navbar-logo-text" style={{verticalAlign: 'middle'}}>Crypto Tracking</span>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
