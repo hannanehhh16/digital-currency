@@ -1,8 +1,10 @@
 import React from 'react'
 import contactImg from "../assets/images/contact.png"
+import "../App.css"
 
 export default function ContactUsPage() {
     return (
+        <div className='contactus'>
         <div className='container m-4'>
             <div className="row">
                 <div className='col-12 p-3 bg-info rounded-3'>
@@ -33,6 +35,7 @@ export default function ContactUsPage() {
                     <img className="about-img" src={contactImg} alt="about" />
                 </div>
             </div>
+        </div>
         </div>
     )
 }

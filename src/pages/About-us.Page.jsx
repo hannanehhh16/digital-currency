@@ -1,7 +1,10 @@
 import React from 'react'
 import aboutImg from "../assets/images/about.png"
+import "../App.css"
+
 export default function AboutUsPage() {
     return (
+        <div className='aboutus'>
         <div className='m-4'>
             <div className="p-3 bg-info rounded-3">
                 <h3>About Us</h3>
@@ -14,6 +17,7 @@ export default function AboutUsPage() {
                     <img className="about-img" src={aboutImg} alt="about" />
                 </div>
             </div>
+        </div>
         </div>
     )
 }

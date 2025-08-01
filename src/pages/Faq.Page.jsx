@@ -1,8 +1,9 @@
 import React from 'react'
+import "../App.css"
 
 export default function FaqPage() {
     return (
-        <div>
+        <div className='faq'>
             <div class="accordion m-5" id="accordionExample">
                 <div class="accordion-item ">
                     <h2 class="accordion-header">
