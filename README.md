@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Crypto Tracking
 
- ## Crypto Tracking
+ ## Getting Started with Create React App
 
  ### Netlify link 
  
