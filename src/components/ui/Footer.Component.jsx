@@ -12,7 +12,7 @@ import "./Footer.css";
 
 
 const AnimatedWaveFooter = () => (
-  <footer>
+  <footer className='footer'>
     <div className="background">
       <svg
         version="1.1"
