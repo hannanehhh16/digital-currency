@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
 export default function CoinsComponent( {data})  {
     return (
 
-        <div className="table-responsive">
+        <div className="table-responsive ">
             <table className="table table-hover mt-5">
-                <thead>
+                <thead >
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">Logo</th>
@@ -28,10 +28,10 @@ export default function CoinsComponent( {data})  {
                                 <img src={coin.image} alt="logo" className="logo-symbol" />
                             </td>
                             <td><Link to={`/coin/${coin.id}`}>{coin.symbol}</Link></td>
-                            <td>{coin.current_price.toLocaleString()}$</td>
-                            <td>{coin.price_change_percentage_24h.toFixed(2)}%</td>
-                            <td>{coin.total_volume.toLocaleString()}</td>
-                            <td>{coin.market_cap.toLocaleString()}$</td>
+                            <td>{coin.current_price != null ? coin.current_price.toLocaleString() + "$" : "-"}</td>
+                            <td>{coin.price_change_percentage_24h != null ? coin.price_change_percentage_24h.toFixed(2) + "%" : "-"}</td>
+                            <td>{coin.total_volume != null ? coin.total_volume.toLocaleString() : "-"}</td>
+                            <td>{coin.market_cap != null ? coin.market_cap.toLocaleString() + "$" : "-"}</td>
                         </tr>
                     ))}
                 </tbody>

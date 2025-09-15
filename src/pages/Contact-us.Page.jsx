@@ -28,7 +28,7 @@ export default function ContactUsPage() {
                         <input type="text" className='form-control' placeholder='please write your message' />
                     </div>
                     <div>
-                        <button className='btn btn-outline-primary ms-3 mt-4'>Send</button>
+                        <button className='btn btn-outline-dark ms-3 mt-4'>Send</button>
                     </div>
                 </div>
                 <div className="col-md-5 text-center">

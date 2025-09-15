@@ -23,7 +23,7 @@ const HomePage = () => {
     }, []);
 
     return (
-        <div className="container">
+        <div className="container my-4">
             <div className="row">
                 <div className="col-12 text-center">
                     <h1 className='my-5'>Crypto Tracking</h1>
@@ -33,7 +33,7 @@ const HomePage = () => {
             </div>
 
             <div className="row">
-                <div className="col-12">
+                <div className="col-12 mb-6">
                     {loading ? <Spinner /> : error !== "" ? <h1>{error}</h1> : <CoinsComponent data={data} />}
                 </div>
             </div>
